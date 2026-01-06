@@ -1,0 +1,192 @@
+/* src/pages/Dashboard.scss */
+
+/* === 1. The Screen Container === */
+.dashboard-page {
+  /* Locks height to screen size */
+  height: calc(100vh - var(--header-height) - 48px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevents outer scrolling */
+  font-size: 14px;
+  padding: 0;
+}
+
+/* === 2. Outer White Box (.fulpage) === */
+.fulpage {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  /* This makes the white box fill the screen */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px 16px 20px; 
+  /* Critical: prevents inner content from blowing out the height */
+  overflow: hidden; 
+}
+
+/* === Toolbar === */
+.dashboard-toolbar {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  .spacer{
+
+    flex-grow: 1;
+  } /* Space between toolbar and table box */
+}
+
+/* ... (Search Bar & Action Styles remain the same) ... */
+.search-bar {
+  position: relative;
+  
+  input {
+    /* 1. Change padding: Less on left (16px), More on right (40px) */
+    padding: 10px 40px 10px 16px;
+    
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    min-width: 250px;
+    font-size: 14px;
+    outline: none; /* Optional: removes default blue browser outline */
+  }
+  
+  .search-icon {
+    position: absolute;
+    
+    /* 2. Move icon to the right */
+    right: 14px;
+    left: auto; /* Unset the left property */
+    
+    top: 50%;
+    transform: translateY(-50%);
+    color: #292828;
+    font-size: 16px; /* Adjust size if needed */
+    pointer-events: none; /* Allows clicks to pass through to the input */
+  }
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 12px;
+
+}
+
+/* === 3. Inner Box (.dashboard-table-wrapper) === */
+.dashboard-table-wrapper {
+  /* The visible border for the inner box */
+  border: 1px solid var(--border-color); 
+  border-radius: 8px;
+  
+  
+  /* Make this box fill all remaining space in the white card */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  
+  /* Critical: allows the scrollbar to exist inside this box */
+  min-height: 0; 
+  overflow: hidden;
+  margin-bottom: 4px; /* Space above pagination */
+}
+
+/* === Scrollable Table Area === */
+.dashboard-table {
+  width: 100%;
+  flex-grow: 1;     /* Fills the wrapper */
+  overflow-y: auto;
+  
+  &::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+  /* Scrollbar appears here */
+}
+
+/* === Table Styles === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th{
+    padding: 8px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 14px;
+    color: #6F7C80;
+  }
+
+  td {
+    padding: 6px 16px 6px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 14px;
+    font-weight: bold;
+    //height: 20px;
+    
+  }
+
+  thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #FAFAFB; /* Light grey header background */
+    color: #777777;
+    font-weight: 600;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .table-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+/* ... (Badges, Stars, Buttons remain the same) ... */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize;
+  &.created { background-color: #E3E3E3; color: #555555; }
+  &.generated { background-color: #DFF0D8; color: #3C763D; }
+  &.in-progress { background-color: #FCF8E3; color: #8A6D3B; }
+  &.discarded { background-color: #F2DEDE; color: #A94442; }
+  &.completed { background-color: #D9EDF7; color: #31708F; }
+}
+
+.star-rating {
+  display: flex;
+  gap: 2px;
+  .star-filled { color: #00A0DF; }
+}
+.rating-empty {
+  display: flex;
+  gap: 2px;
+  color: #E0E0E0;
+  border-color: #C4C4C4;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  .action-icon {
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+    &:hover { color: var(--color-primary); }
+    &.delete { color: #D9534F; }
+  }
+}
+.plus-icon {
+  width: 18px;
+  height: 18px;
+ 
+}

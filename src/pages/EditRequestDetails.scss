@@ -1,0 +1,237 @@
+/* src/pages/EditRequestDetails.scss */
+
+/* === Breadcrumb Header (in TopBar) === */
+.breadcrumb-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+  span {
+    color: #999;
+  }
+  p {
+    color: var(--topbar-text);
+  }
+}
+
+/* === Page Styles === */
+.edit-details-page {
+  .back-button {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 24px;
+    display: inline-block;
+  }
+
+  /* Re-use the same tab styles */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+
+    .tab-btn {
+      padding: 10px 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: #777;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        color: var(--color-primary);
+        border-bottom-color: var(--color-primary);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .tab-content-wrapper {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 24px;
+    font-size: 14px;
+  }
+
+  /* === Details Grid === */
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+
+    .grid-item {
+      label {
+        display: block;
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+      
+      /* Styles for the inputs */
+      input, select {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: 1px solid var(--border-color);
+        font-size: 14px;
+        background-color: #fff; /* Make it white so it looks editable */
+      }
+
+      /* Make read-only inputs look different */
+      input[readOnly] {
+        background-color: #f8f9fa;
+      }
+    }
+  }
+
+  /* === Prompts Container === */
+  .prompts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* === Form Elements === */
+  .form-group {
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    
+    & + .form-group {
+      margin-top: 20px;
+    }
+  }
+
+  /* === Checkbox === */
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    label {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+
+  /* === Prompt Text Display === */
+  .prompt-text-display {
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+    background-color: #fff;
+    
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    white-space: pre-line;
+    padding-right: 20px;
+
+    &::after {
+      content: '▾';
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      color: #555;
+      font-size: 20px;
+    }
+  }
+}
+/* === Claim Details Tab === */
+.claim-list-header {
+  display: flex;
+  padding: 0 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+
+  span:first-child {
+    width: 80px;
+    flex-shrink: 0;
+  }
+}
+
+.claim-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.claim-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .claim-number {
+    width: 80px;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 16px;
+  }
+
+  .claim-description {
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    padding-right: 24px;
+  }
+
+  /* --- Styles for the new buttons --- */
+  .button-small {
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    flex-shrink: 0;
+    min-width: 90px;
+  }
+  
+  .button-review {
+    background-color: #E9F5FF; // Light blue
+    color: #0D6EFD; // Primary blue
+    border: 1px solid #BEE1FF;
+  }
+
+  .button-done {
+    background-color: #E6F7EB; // Light green
+    color: #28A745; // Green
+    border: 1px solid #C3E6CB;
+  }
+}

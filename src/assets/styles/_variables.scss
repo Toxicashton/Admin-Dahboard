@@ -1,0 +1,37 @@
+/* src/assets/styles/_variables.scss */
+:root {
+  /* === Sidebar === */
+  --sidebar-bg:  linear-gradient(
+    180deg,
+    #2D526B 0%,
+    #2C4F68 19%,
+    #1C3950 64%,
+    #18374B 100%
+  );
+  --sidebar-text: #E0E0E0;
+  --sidebar-text-active: #FFFFFF;
+  --sidebar-active-bg: #142E43;
+  --sidebar-logo-text: #FFFFFF;
+
+  /* === TopBar === */
+  --topbar-bg: #FFFFFF;
+  --topbar-text: #2B3445;
+  --topbar-border: #E0E0E0;
+
+  /* === Page === */
+  --page-bg: #F4F7FC;
+  --page-text: #333333;
+
+  /* === Action Colors === */
+  --color-primary: #00A0DF;
+  --color-primary-text: #FFFFFF;
+
+  /* === Other === */
+  --border-color: #DEE2E6;
+
+  --header-height: 60px; /* You can adjust this value */
+  
+}
+.sidebar {
+  background: var(--sidebar-bg) no-repeat;
+}

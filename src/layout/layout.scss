@@ -1,0 +1,186 @@
+/* src/layout/layout.scss */
+
+/* === MainLayout === */
+.app-layout {
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.page-content {
+  padding: 16px;
+  
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 279px;
+  flex-shrink: 0;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  height: 100%vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  height: var(--header-height);
+  padding:  12px 0 0 24px;; 
+  /* Remove vertical padding */
+  //border-bottom: 1px solid #4A5568;
+
+  
+  /* Add flex properties */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* This centers the h3 */
+  
+  h3 {
+    color: var(--sidebar-logo-text);
+  }
+}
+.sidebar-logo {
+    //width: 140px; /* Adjust this number to make it bigger/smaller */
+    //height: auto; /* Maintains the aspect ratio */
+    //object-fit: contain;
+   
+    
+    width: 153px;
+    height: 41px;
+    //align-items: start;
+  }
+  .bc-logo {
+    width: 32px;
+    height: 32px; /* Maintains the aspect ratio */
+    object-fit: contain;
+    margin-left: 69px;
+  }
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px;
+  flex-grow: 1;
+}
+
+.nav-link {
+  padding: 8px 20px;
+  margin-bottom: 8px;
+  //border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  letter-spacing: 0px;
+  
+  .nav-icon {
+    font-size: 15px;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &.active {
+    background-color: var(--sidebar-active-bg);
+    color: var(--sidebar-text-active);
+  }
+}
+
+.sidebar-footer {
+  //padding: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #9AA4B2;
+  
+
+  .sidebar-menu-image {
+    width: 279px;
+    height: 302px;
+    display: flex;
+    margin: 0 auto;
+    position: relative; 
+     img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }/* 1. Establishes a positioning context */
+
+
+    .footer-text-overlay {
+    position: absolute; /* 2. Take out of flow */
+    bottom: 0;          /* 3. Pin to bottom */
+    left: 0;
+    width: 100%;
+    padding: 24px;      /* Add spacing from edges */
+    text-align: center;
+    z-index: 1;         /* Ensure it sits on top of image */
+    
+    p {
+      margin: 0;
+      font-size: 12px;
+      color: #9AA4B2; /* Ensure this is readable over your image */
+      line-height: 1.5;
+    }
+  }
+  }
+
+  
+}
+
+/* === TopBar === */
+.topbar {
+  height: var(--header-height);
+  padding: 0 24px; /* Remove vertical padding */
+  background-color: var(--topbar-bg);
+  //border-bottom: 1px solid var(--topbar-border);
+  font-size: 16px;
+  box-shadow: 0px 3px 6px #0000000D;
+  
+  /* Keep existing flex properties */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-title {
+  font-size: 16px;
+  font-weight: 790;
+  color: var(--topbar-text);
+  padding-bottom: 14px ;
+  padding-top: 14px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #E3F0FA; /* Light blue background */
+    border-radius: 50%;        /* Makes it a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Style the icon inside */
+    svg {
+      font-size: 20px;
+      color: #7AAFC4; /* A muted blue-grey color for the icon lines */
+    }
+  }
+}

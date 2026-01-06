@@ -1,0 +1,130 @@
+/* src/pages/CreateRequest.scss */
+
+/* Styles for the new content we are putting in the TopBar */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This pushes buttons to the right */
+  margin-bottom: 24px;
+  font-size: 14px;
+
+  .back-button {
+    font-size: 14px bold;
+    color: #000000;
+  }
+
+  .header-actions {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+  }
+}
+
+.create-request-page {
+  /* === Form Body === */
+  .form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  /* === Reusable Card === */
+  .form-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    font-size: 14px;
+  }
+
+  /* === Form Elements === */
+  .form-group {
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      font-size: 14px;
+    }
+
+    textarea {
+      min-height: 80px;
+    }
+    .fsize {
+      font-size: 14px;
+    }
+  }
+
+  /* === File Upload === */
+  .file-upload-box {
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #FAFAFB;
+
+    svg {
+      font-size: 24px;
+      color: var(--color-primary);
+    }
+    p {
+      color: #777;
+    }
+  }
+
+  .file-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: #f1f1f1;
+    border-radius: 16px;
+    margin-top: 12px;
+
+    svg {
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+
+  /* === Tabs === */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 16px;
+    
+
+    .tab-btn {
+      padding: 10px 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: #777;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        color: var(--color-primary);
+        border-bottom-color: var(--color-primary);
+        font-weight: 500;
+      }
+    }
+  }
+
+  /* This is just a container now */
+  .tab-content {
+    padding-top: 16px;
+  }
+  
+} 

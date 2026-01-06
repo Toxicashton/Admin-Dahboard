@@ -1,0 +1,118 @@
+/* src/pages/ManageTags.scss */
+
+.manage-tags-page {
+  height: calc(100vh - var(--header-height) - 48px);
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-tags-container {
+  background-color: #FFFFFF;
+ // border: 1px solid var(--border-color);
+  border-radius: 8px;
+  flex-grow: 1;
+  padding: 24px;
+  
+  /* Use Flexbox to stack sections vertically */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+  /* Disable scrollbar on the container */
+  overflow: hidden; 
+}
+
+.tag-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  /* Make each section grow to fill available space equally */
+  flex: 1; 
+  min-height: 0; /* Important for flex children to shrink properly */
+
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.tag-box {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #fff;
+  cursor: text;
+  
+  /* Make the box fill the section height */
+  flex-grow: 1;
+  
+  /* Layout: Column to put tags top, input bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 8px;
+  /* Allow tags to scroll internally if there are TOO many */
+  overflow-y: auto; 
+  margin-bottom: 8px; /* Space between tags and input */
+}
+
+/* Input at the bottom */
+.tag-box input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  padding: 6px 0;
+  width: 100%;
+  border-top: 1px dashed transparent; /* Optional divider */
+  
+  &::placeholder {
+    color: #ccc;
+  }
+
+  &:focus {
+    border-top-color: #eee; /* Show subtle line when typing */
+  }
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: #F0F7FF;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  height: fit-content;
+
+  svg {
+    font-size: 10px;
+    color: #666;
+    cursor: pointer;
+    
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.tags-footer {
+  /* Prevent footer from growing */
+  flex-shrink: 0;
+  padding-top: 12px;
+  text-align: center;
+  
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+}

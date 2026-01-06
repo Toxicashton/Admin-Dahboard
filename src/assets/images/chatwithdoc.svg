@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.25" height="16.25" viewBox="0 0 16.25 16.25">
+  <g id="message-square" transform="translate(0.625 0.625)">
+    <path id="message-square-2" data-name="message-square" d="M18,13a1.667,1.667,0,0,1-1.667,1.667h-10L3,18V4.667A1.667,1.667,0,0,1,4.667,3H16.333A1.667,1.667,0,0,1,18,4.667Z" transform="translate(-3 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+  </g>
+</svg>

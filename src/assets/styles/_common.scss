@@ -1,0 +1,27 @@
+/* This file is for all common, reusable styles */
+
+/* === Button Styles (global) === */
+.button {
+  appearance: none;
+  padding: 10px 16px;
+  
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+  border: none;
+}
+
+.button-secondary {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  color: var(--page-text);
+}

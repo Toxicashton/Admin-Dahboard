@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ESG 01024",
+    "name": "Orman Clark",
+    "role": "User",
+    "zone": "Americas",
+    "market": "Brazil",
+    "country": "Brazil",
+    "business": "Americas",
+    "isActive": true
+  },
+  {
+    "id": "ESG 01025",
+    "name": "Alex Morethan",
+    "role": "Super Admin",
+    "zone": "Americas",
+    "market": "Bolivia",
+    "country": "Bolivia",
+    "business": "Switzerland",
+    "isActive": true
+  },
+  {
+    "id": "ESG 01026",
+    "name": "Nishant Dogra",
+    "role": "Market Admin",
+    "zone": "Asia, Oceania and Africa",
+    "market": "Central & West Africa Region (CWAR)",
+    "country": "Burkina-Faso",
+    "business": "Switzerland",
+    "isActive": true
+  },
+  {
+    "id": "ESG 01027",
+    "name": "Vladimir Raksha",
+    "role": "Market Admin",
+    "zone": "Americas",
+    "market": "Chile",
+    "country": "Chile",
+    "business": "Switzerland",
+    "isActive": true
+  },
+  {
+    "id": "ESG 01028",
+    "name": "DizArm Creative Agency",
+    "role": "Global Admin",
+    "zone": "Americas",
+    "market": "Plata Region",
+    "country": "Argentina",
+    "business": "Switzerland",
+    "isActive": true
+  }
+]

@@ -1,0 +1,72 @@
+/* src/pages/ChatWithDocument.scss */
+
+.chat-page {
+  height: 100%; /* Fill the height of the page-content area */
+  height: calc(100vh - var(--header-height) - 48px);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  flex-grow: 1; /* Fill remaining vertical space */
+  display: flex;
+  flex-direction: column;
+  min-height: 600px; /* Ensure it has height even if empty */
+  overflow: hidden; /* Keeps child elements inside corners */
+}
+
+.chat-messages {
+  flex-grow: 1; /* Takes up all available space above the input */
+  padding: 24px;
+  overflow-y: auto; /* Allows scrolling if messages get long */
+  background-color: #fff;
+}
+
+.chat-input-area {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border-color);
+  background-color: #fff;
+  gap: 12px;
+
+  input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #555;
+    background: transparent;
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  .send-button {
+    background-color: #00A3E0; /* Cyan/Blue color from screenshot */
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px; /* Rounded square shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    
+    svg {
+      font-size: 18px;
+      transform: rotate(45deg); /* Tweak rotation to match paper plane look */
+      margin-left: -2px; /* Visual centering adjustment */
+    }
+
+    &:hover {
+      background-color: dark(#00A3E0, 10%);
+    }
+  }
+}

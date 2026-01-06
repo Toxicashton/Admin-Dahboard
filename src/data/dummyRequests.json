@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ESG 01",
+    "content": "www.nestle.com",
+    "url": "http://www.nestle.com",
+    "claims": "1/3",
+    "status": "Created",
+    "responsible": "Ornan Clark",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 02",
+    "content": "www.nespresso.com",
+    "url": "http://www.nespresso.com",
+    "claims": "0/1",
+    "status": "Generated",
+    "responsible": "Alex Morethan",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 03",
+    "content": "Guideline for regenerative agriculture",
+    "url": "#",
+    "claims": "0/2",
+    "status": "Discarded",
+    "responsible": "Nishant Dogra",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 04",
+    "content": "Regenerative agriculture",
+    "url": "#",
+    "claims": "1/1",
+    "status": "In Progress",
+    "responsible": "Alex Morethan",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 05",
+    "content": "ESG",
+    "url": "#",
+    "claims": "1/2",
+    "status": "Completed",
+    "responsible": "Vladimir Raksha",
+    "createdDate": "20-09-2025",
+    "rating": 5
+  },
+  {
+    "id": "ESG 06",
+    "content": "www.nespresso.com",
+    "url": "http://www.nespresso.com",
+    "claims": "0/3",
+    "status": "In Progress",
+    "responsible": "Alex Morethan",
+    "createdDate": "20-09-2025",
+    "rating": 5
+  },
+  {
+    "id": "ESG 07",
+    "content": "www.nestle.com",
+    "url": "http://www.nestle.com",
+    "claims": "2/4",
+    "status": "Created",
+    "responsible": "Ornan Clark",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 01",
+    "content": "www.nestle.com",
+    "url": "http://www.nestle.com",
+    "claims": "1/3",
+    "status": "Created",
+    "responsible": "Ornan Clark",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 02",
+    "content": "www.nespresso.com",
+    "url": "http://www.nespresso.com",
+    "claims": "0/1",
+    "status": "Generated",
+    "responsible": "Alex Morethan",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 03",
+    "content": "Guideline for regenerative agriculture",
+    "url": "#",
+    "claims": "0/2",
+    "status": "Discarded",
+    "responsible": "Nishant Dogra",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 04",
+    "content": "Regenerative agriculture",
+    "url": "#",
+    "claims": "1/1",
+    "status": "In Progress",
+    "responsible": "Alex Morethan",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  },
+  {
+    "id": "ESG 05",
+    "content": "ESG",
+    "url": "#",
+    "claims": "1/2",
+    "status": "Completed",
+    "responsible": "Vladimir Raksha",
+    "createdDate": "20-09-2025",
+    "rating": 3
+  },
+  {
+    "id": "ESG 06",
+    "content": "www.nespresso.com",
+    "url": "http://www.nespresso.com",
+    "claims": "0/3",
+    "status": "In Progress",
+    "responsible": "Alex Morethan",
+    "createdDate": "20-09-2025",
+    "rating": 5
+  },
+  {
+    "id": "ESG 07",
+    "content": "www.nestle.com",
+    "url": "http://www.nestle.com",
+    "claims": "2/4",
+    "status": "Created",
+    "responsible": "Ornan Clark",
+    "createdDate": "20-09-2025",
+    "rating": 0
+  }
+]

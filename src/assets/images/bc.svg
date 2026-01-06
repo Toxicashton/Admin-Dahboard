@@ -1,0 +1,9 @@
+<svg id="Component_48_1" data-name="Component 48 – 1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_445" data-name="Group 445" transform="translate(0.251 0.251)">
+    <path id="Rectangle_217" data-name="Rectangle 217" d="M9,0H32a0,0,0,0,1,0,0V32a0,0,0,0,1,0,0H9a9,9,0,0,1-9-9V9A9,9,0,0,1,9,0Z" transform="translate(-0.251 -0.251)" fill="#274a64"/>
+  </g>
+  <g id="Group_446" data-name="Group 446" transform="translate(9.701 8.913)">
+    <path id="Down_Arrow_3_" d="M6.9,0A.626.626,0,0,0,6.46.184L.184,6.46a.628.628,0,0,0,.887.887L6.9,1.515l5.832,5.833a.628.628,0,0,0,.887-.887L7.348.184A.626.626,0,0,0,6.9,0Z" transform="translate(0 13.808) rotate(-90)" fill="#fff"/>
+    <path id="Down_Arrow_3_2" data-name="Down_Arrow_3_" d="M6.9,0A.626.626,0,0,0,6.46.184L.184,6.46a.628.628,0,0,0,.887.887L6.9,1.515l5.832,5.833a.628.628,0,0,0,.887-.887L7.348.184A.626.626,0,0,0,6.9,0Z" transform="translate(5.64 13.808) rotate(-90)" fill="#fff"/>
+  </g>
+</svg>

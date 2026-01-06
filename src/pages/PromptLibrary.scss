@@ -1,0 +1,155 @@
+/* src/pages/PromptLibrary.scss */
+
+.prompt-library-page {
+  height: calc(100vh - var(--header-height) - 48px);
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.library-container {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* === Toolbar === */
+.library-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--border-color);
+
+  /* Pushes the actions to the right */
+  .spacer {
+    flex-grow: 1; 
+  }
+
+  /* Container for Category, Search, and Button */
+  .toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between the three items */
+  }
+
+  /* 1. Category Selector Style */
+  .category-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+
+    label {
+      font-size: 14px;
+      color: #999;
+      font-weight: 500;
+      white-space: nowrap; /* Prevent label from wrapping */
+    }
+
+    select {
+      padding: 10px 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      min-width: 250px;
+      font-size: 14px;
+      color: #333;
+    }
+  }
+
+  /* 2. Search Bar Style */
+  .search-bar {
+    position: relative;
+    
+    input {
+      padding: 10px 16px 10px 40px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      width: 240px;
+      font-size: 14px;
+    }
+    
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+    }
+  }
+}
+
+/* === List Area === */
+.prompts-list {
+  padding: 24px;
+  overflow-y: auto;
+  flex-grow: 1;
+
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+    
+  }
+}
+
+.prompts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+}
+
+/* === Prompt Card === */
+.prompt-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .preview-btn {
+      background: none;
+      border: none;
+      color: var(--color-primary);
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .prompt-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+}
+
+.no-data {
+  color: #999;
+  font-style: italic;
+  padding: 20px 0;
+}
