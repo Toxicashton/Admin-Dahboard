@@ -137,10 +137,5 @@ Update these values to customize the look and feel:
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License — feel free to use and modify.
 
-```
-
----
 
